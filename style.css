@@ -50,5 +50,15 @@ button {
     color: inherit;
     background-color: inherit;
 }
+/*    MAIN PART    */ 
 
+
+img {
+    max-width: 100%;
+}
+
+.header__logo img{
+    max-width: 80px;
+    max-height: 80px;
+}
 
