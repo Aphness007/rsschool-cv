@@ -111,9 +111,30 @@ img {
     flex-wrap: wrap;
 }
 .menu__item{
-    padding-right: 20px;
+    margin-right: 20px;
 }
-
+.menu__item{
+    position: relative;
+}
+.menu__link::before{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: #C6EDE6;
+    height: 3px;
+    width: 0%;
+    transition: all 0.4s ease 0s;
+}
+.link__menu--active{
+    color: #C6EDE6;
+}
+.link__menu--active:hover.link__menu--active{
+    color: white;
+}
+.menu__link:hover::before{
+width: 100%;
+}
 .item__image{
     width: 150px;
     height: 150px;
