@@ -11,6 +11,7 @@
 
 <body>
     <div class="wrapper">
+        <div class="bc__color">
         <header class="header">
             <div class="header__container">
                 <a href="" class="header__logo">
@@ -18,12 +19,12 @@
                 </a>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link link__menu--active">ABOUT</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">EDUCATION AND COURSES</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">SKILLS</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">INTERESTS AND HOBBIES</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">CODE SNIPPET</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">PROJECTS</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link link__menu--active">ABOUT</a></li>
+                        <li class="menu__item"><a href="#education" class="menu__link">EDUCATION AND COURSES</a></li>
+                        <li class="menu__item"><a href="#skills" class="menu__link">SKILLS</a></li>
+                        <li class="menu__item"><a href="#interest" class="menu__link">HOBBIES</a></li>
+                        <li class="menu__item"><a href="#code" class="menu__link">CODE SNIPPET</a></li>
+                        <li class="menu__item"><a href="#project" class="menu__link">PROJECTS</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,7 +34,8 @@
     <div class="about__container">
         <div class="about__body">
             <div class="about__row">
-                <div class="about__item item--left">
+                <div class="about__item item--left" class="about">
+                    <h1>Marina Demianenko</h1>
                     <p>Result focused, well organized and straightforward Quality Assurance Engineer with over 5 years experience. Open for new experiences, challenging tasks and continuous self improvement.</p>
                  </div>
                 <div class="about__item item item--right">
@@ -47,11 +49,61 @@
         </div>
     </div>
 </div>
-
-        </main>
+</div>
+<div class="section__skills skills">
+    <div class="skills__container">
+        <div class="skills__body">
+            <div class="skills__column column--left">
+                <div class="skills__row item">
+                    <h2 class="skills__title title" id="skills">Skills</h2>
+                    <ul class="item__list">
+                        <li>strong knowledge of HTML/CSS/BEM/DOM;</li>
+                        <li>experience of working with version control systems (GIT);</li>
+                        <li>experience of working with Jira, Confluence, Firma tools;</li>
+                        <li>basic knowledge of JavaScript.</li>
+                    </ul>
+                </div>
+                <div class="skills__row item">
+                    <h2 class="skills__title title" id="education">Education</h2>
+                    <ul class="item__list">
+                        <li>V.N. Karazin Kharkiv National University, Master's degree in economics, 2014 - 2016;</li>
+                        <li>Exclusive language school, <span class="skills__eng">Upper-intermediate english</span> knowledge level;</li>
+                        <li>Hillel computer school, Manual QA Engineer, 2018;</li>
+                        <li>LearnQA, SQL Tester tools, 2021;</li>
+                        <li>Layout maker 2022;</li>
+                        <li>Kharkiv National University of Radio Electronics, second Master's degree in Software Engineering 2022 - present.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills__column column--right">
+                <div class="skills__row item">
+                    <h2 class="skills__title title" id="interest">HOBBIES</h2>
+                    <ul class="item__list">
+                        <li>took part in “Summer Work and Travel USA” program;</li>
+                        <li>participated in charity marathons EPIKUR Kharkiv International Marathon and 4th Kharkiv International Marathon;</li>
+                        <li>took training courses related to finance, economy and investment fields in Pro-finances school: ”I am an Investor”, ”Funds”.</li>
+                    </ul>
+                </div>
+                <div class="skills__row item">
+                    <h2 class="skills__title title" id="code">CODE SNIPPET</h2>
+                    <div class="skills__code code">
+                        <div class="code__body">
+                            <div class="code__row">
+                                <pre>let countBits = n => n.toString(2).replace(/0/g,'').length;</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+</div>
+</main>
         <footer class="footer">
 
         </footer>
     </div>
+</div>
 </body>
 </html>
