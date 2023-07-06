@@ -135,15 +135,41 @@ img {
 .header__logo img{
     max-width: 100px;
     max-height: 100px;
-    
+    animation-name: animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes animation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(-5px, 5px);
+    }
+    50%{
+        transform: translate(5px, 5px);
+    }
+    75%{
+        transform: translate(5px, -5px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+.header__logo img:hover{
+    animation: paused;
 }
 .header__logo{
     transition: all 0.3s ease 0s;
 }
+
 .header{
     padding: 20px;
     position: relative;
 }
+
 .header__container{
     display: flex;
     flex-wrap: nowrap;
@@ -200,7 +226,7 @@ li,p{
     width: 150px;
     height: 150px;
     justify-content: center;
-    background: url('images/avatar.png') center/contain no-repeat;
+    background: url('images/avatar.webp') center/contain no-repeat;
     border-radius: 50%;
 }
 
@@ -376,7 +402,7 @@ animation: animate 4s linear infinite;
     background: url('./images/shapes.svg') 0 0 no-repeat;
     width: 100px;
     height: 100px;
-    z-index: 5;
+    z-index: 0;
 }
 @keyframes animate {
     0% {
