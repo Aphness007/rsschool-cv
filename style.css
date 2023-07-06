@@ -72,7 +72,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: #b8bce9;
+    background: #c8cae7;
 }
 
 .wrapper>main {
@@ -145,13 +145,13 @@ img {
         transform: translate(0px, 0px);
     }
     25%{
-        transform: translate(-5px, 5px);
+        transform: translate(-6px, 6px);
     }
     50%{
-        transform: translate(5px, 5px);
+        transform: translate(6px, 6px);
     }
     75%{
-        transform: translate(5px, -5px);
+        transform: translate(6px, -6px);
     }
     100%{
         transform: translate(0px, 0px);
@@ -339,7 +339,7 @@ margin-bottom: 20px;
 .code__row{
     width: 600px;
     position: relative;
-    padding: 20px;
+    padding: 40px;
     background: #abafe8;
     border-radius: 20px;
     display: flex;
@@ -349,13 +349,14 @@ margin-bottom: 20px;
 }
 .code__row pre{
     color: #abafe8;
+    text-shadow: 1px 0 0 #abafe8;
     position: absolute;
     z-index: 5;
 
 }
 .code__row pre:hover{
     transition: all 0.5s ease 0s;
-    transform: scale(0.9);
+    transform: scale(1.04);
 }
 .code__row::before{
 position: absolute;
@@ -462,7 +463,7 @@ animation: animate 4s linear infinite;
 
 
 .project__item:hover .project__title {
-    transform: translate(0px, 240%)
+    transform: translate(0px, 220%)
 }
 .project__item:hover .title--modified {
     color: #8d91cb;
