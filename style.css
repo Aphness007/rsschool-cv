@@ -98,7 +98,8 @@ body {
     position: relative;
 }
 .divider--3::after,
-.divider--2::before{
+.divider--2::before,
+.divider::after{
     content:'';
     position: absolute;
     height: 2px;
@@ -107,19 +108,17 @@ body {
     left: 0;
 }
 .divider--2::before{
-    bottom: 84.5%;
+    bottom: 84.4%;
 }
 .divider--3::after{
-    top: 41%;
+    top: 40.8%;
 }
 
 .divider::after{
-    content:'';
-    position: absolute;
     height: 2px;
     width: 100%;
     background-color: white;
-    bottom: -10%;
+    bottom: -12%;
     left: 0;
 }
 /* ========= */
@@ -341,10 +340,6 @@ li,p{
     margin-bottom: 48px;
 }
 
-.column__title:not(:last-child){
-margin-bottom: 20px;
-}
-
 .skills__eng{
     color:#C6EDE6;
     font-weight: 700;
@@ -521,7 +516,7 @@ animation: animate 4s linear infinite;
 /*   Go to the top arrow  */
 
 .gototop div{
-    background: url('./assets/images/arrow.png') center/contain no-repeat;
+    background: url('./assets/images/arrow.webp') center/contain no-repeat;
     width: 60px;
     height: 60px;   
     position: fixed; 
