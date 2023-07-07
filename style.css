@@ -87,6 +87,8 @@ body {
     border-radius: 20px;
     box-shadow: rgba(0,0,0,0.5) 10px 19px 38px, rgba(0,0,0,0.5) 10px 10px 15px 12px;
     background: #abafe8;
+    position: relative;
+    overflow: hidden;
 }
 
 .about__body{
@@ -96,7 +98,8 @@ body {
     position: relative;
 }
 .divider--3::after,
-.divider--2::before{
+.divider--2::before,
+.divider::after{
     content:'';
     position: absolute;
     height: 2px;
@@ -105,19 +108,17 @@ body {
     left: 0;
 }
 .divider--2::before{
-    bottom: 85%;
+    bottom: 84.4%;
 }
 .divider--3::after{
-    top: 41%;
+    top: 40.8%;
 }
 
 .divider::after{
-    content:'';
-    position: absolute;
     height: 2px;
     width: 100%;
     background-color: white;
-    bottom: -10%;
+    bottom: -12%;
     left: 0;
 }
 /* ========= */
@@ -231,6 +232,7 @@ li,p{
     border: 2px solid white;
     margin: 10px 10px;
 }
+
 .item__avatar .item__box{
     position: absolute;
     top: 0;
@@ -338,10 +340,6 @@ li,p{
     margin-bottom: 48px;
 }
 
-.column__title:not(:last-child){
-margin-bottom: 20px;
-}
-
 .skills__eng{
     color:#C6EDE6;
     font-weight: 700;
@@ -351,7 +349,8 @@ margin-bottom: 20px;
     justify-content: space-between;
 }
 .item--1{
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
+    flex: 0 0 552px;
     margin-right: 40px;
 }
 .item__list{
@@ -406,34 +405,9 @@ animation: animate 4s linear infinite;
 .column__skills{
     position: relative;
 }
-.code__decor{
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    background: url('assets/images/02.svg') 0 0 no-repeat;
-    width: 100px;
-    height: 100px;
-    z-index: 10;
-}
-.header__decor{
-    position: absolute;
-    bottom: 10%;
-    left: 18%;
-    background: url('assets/images/04.svg') 0 0 no-repeat;
-    width: 100px;
-    height: 100px;
-    z-index: 5;
-}
 
-.project__decor{
-    position: absolute;
-    bottom: 5%;
-    left: -2%;
-    background: url('assets/images/shapes.svg') 0 0 no-repeat;
-    width: 100px;
-    height: 100px;
-    z-index: 0;
-}
+
+
 @keyframes animate {
     0% {
         transform: rotate(0deg);
@@ -454,12 +428,11 @@ animation: animate 4s linear infinite;
 
 .project__row{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 30px;
-    align-self: center;
+    margin: 0px 40px;
 }
 .project__item{
     border: 2px solid white;
@@ -537,4 +510,61 @@ animation: animate 4s linear infinite;
 .footer__box:hover img{
     transform: scale(1.3);
     transition: all 0.3s ease 0s;
+}
+
+
+/*   Go to the top arrow  */
+
+.gototop div{
+    background: url('./assets/images/arrow.webp') center/contain no-repeat;
+    width: 60px;
+    height: 60px;   
+    position: fixed; 
+    bottom: 90%;
+    right: 8%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.9s ease;
+    z-index: 100;
+}
+div.gotop{
+    bottom: 5%;
+    opacity: 1;
+    visibility:visible;
+}
+
+/*    Page Decor   */
+
+.decor__1,
+.decor__2,
+.decor__3,
+.decor__4{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+}
+.decor__1{
+    top: 2%;
+    left: 18%;
+    background: url('assets/images/04.svg') 0 0 no-repeat;
+}
+
+.decor__2{
+    top: 43.5%;
+    right: 8.5%;
+    background: url('assets/images/02.svg') 0 0 no-repeat;
+}
+
+.decor__3{
+    bottom: -3.5%;
+    left: 2%;
+    background: url('assets/images/04.svg') 0 0 no-repeat;
+    transform: rotate(-45deg);
+}
+.decor__4{
+    top: -1.2%;
+    right: 2%;
+    background: url('assets/images/shapes.svg') 0 0 no-repeat;
+    transform: rotate(90deg);
 }
