@@ -69,7 +69,7 @@ body {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     background: #c8cae7;
@@ -167,8 +167,10 @@ img {
 }
 
 .header{
-    padding: 20px;
     position: relative;
+}
+.header:not(:last-child){
+    margin-bottom: 20px;
 }
 
 .header__container{
@@ -303,13 +305,15 @@ li,p{
     transform: scale(1.4);
 }
 
-
 /* SKILLS SECTION  */
 
 .item__title:not(:last-child),
 .section__skills:not(:last-child),
 .skills__column:not(:last-child){
     margin-bottom: 60px;
+}
+.section__skills{
+    position: relative;
 }
 .item__list li {
     line-height: 1.6;
@@ -491,13 +495,13 @@ animation: animate 4s linear infinite;
 
 
 .footer{
-    height:100px;
+    position: relative;
 }
 .footer__row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    /* padding: 0px 20px; */
 }
 .footer__box img{
     width: 80px;
@@ -534,7 +538,9 @@ div.gotop{
 }
 
 /*    Page Decor   */
-
+/* .decor__section{
+    position: absolute;
+} */
 .decor__1,
 .decor__2,
 .decor__3,
@@ -545,26 +551,27 @@ div.gotop{
     z-index: 5;
 }
 .decor__1{
-    top: 2%;
-    left: 18%;
+    top: 15%;
+    left: 20%;
     background: url('assets/images/04.svg') 0 0 no-repeat;
 }
 
 .decor__2{
-    top: 43.5%;
+    top: 32%;
     right: 8.5%;
     background: url('assets/images/02.svg') 0 0 no-repeat;
 }
 
 .decor__3{
-    bottom: -3.5%;
-    left: 2%;
+    bottom: 0%;
+    left: 12%;
     background: url('assets/images/04.svg') 0 0 no-repeat;
-    transform: rotate(-45deg);
+    transform: rotate(-95deg);
 }
 .decor__4{
-    top: -1.2%;
-    right: 2%;
+    height: 50px;
+    top: -26%;
+    right: -2%;
     background: url('assets/images/shapes.svg') 0 0 no-repeat;
     transform: rotate(90deg);
 }
