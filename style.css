@@ -167,7 +167,6 @@ img {
 }
 
 .header{
-    padding: 0px 20px;
     position: relative;
 }
 .header:not(:last-child){
@@ -502,7 +501,7 @@ animation: animate 4s linear infinite;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
 }
 .footer__box img{
     width: 80px;
