@@ -69,7 +69,7 @@ body {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
-    /* position: relative; */
+    position: relative;
     display: flex;
     flex-direction: column;
     background: #c8cae7;
@@ -525,7 +525,7 @@ animation: animate 4s linear infinite;
     height: 60px;   
     position: fixed; 
     bottom: 90%;
-    right: 8%;
+    right: 1%;
     opacity: 0;
     visibility: hidden;
     transition: 0.9s ease;
@@ -538,9 +538,7 @@ div.gotop{
 }
 
 /*    Page Decor   */
-/* .decor__section{
-    position: absolute;
-} */
+
 .decor__1,
 .decor__2,
 .decor__3,
